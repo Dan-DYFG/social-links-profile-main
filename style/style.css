@@ -1,0 +1,84 @@
+@font-face {
+    font-family:'Inter';
+    src: url(../assets/fonts/Inter-VariableFont_slnt\,wght.ttf) format(opentype);
+  }
+
+  :root{
+    --backColorBody: hsl(0, 0%, 8%);
+    --backColorMain: hsl(0, 0%, 12%);
+    --backColorButton: hsl(0, 0%, 20%);
+    --backColorButtonHover: hsl(75, 94%, 57%);
+    --fontColor:hsl(0, 0%, 100%);
+
+    --fontTexto: 'Inter';
+  }
+
+  body{
+    background-color: var(--backColorBody);
+    color: var(--fontColor);
+    text-align: center;
+    font-family: var(--fontTexto);
+  }
+  main{
+    position: absolute;
+    background-color: var(--backColorMain);
+    border-radius: 10px;
+    padding: 35px;
+    max-width: 400px;
+    min-width: 300px;
+    
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%); 
+  }
+
+  #foto-perfil{
+    border-radius: 100px;
+    height: 100px;
+  }
+
+  p{
+    color: var(--backColorButtonHover);
+    margin: -10px 0px 0px 0px ;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  q{
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 25px 0px 15px 0px; 
+  }
+  div.btn-links{
+    display: block;
+  }
+  button.links{
+    margin: 9px 0px;
+    width: 100%;
+    height: 50px;
+    background-color: var(--backColorButton);
+    border-radius: 10px;
+    border: none;
+  }
+  button > a{
+    text-decoration: none;
+    color: var(--fontColor);
+    margin: auto;
+    font-family: var(--fontTexto);
+    font-weight: 600;
+  }
+  button:hover{
+    background-color: var(--backColorButtonHover);
+    cursor: pointer; 
+    transition: 0.5s;
+    }
+    button:hover > a{
+    color: var(--backColorBody);
+  }
+  .attribution { 
+    font-size: 11px; 
+    text-align: center;
+    margin: 10px 0px -20px 0px; 
+  }
+  .attribution a { color: var(--backColorButtonHover); }
